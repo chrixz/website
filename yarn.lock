@@ -3246,6 +3246,226 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
+primer-alerts@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/primer-alerts/-/primer-alerts-1.4.0.tgz#5904a6e1ccc93f5ab204df488ab08393d5e9b4cf"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-avatars@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-avatars/-/primer-avatars-1.3.0.tgz#8e6ff727046839f05cb4efe6de096c1d32cca252"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-base@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/primer-base/-/primer-base-1.4.0.tgz#2dc4900b0dec41c4277cedf896d53d29d2b2152b"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-blankslate@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-blankslate/-/primer-blankslate-1.3.0.tgz#23cc5aa99fb2324652744c6dcf35eb2f092be9e1"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-box@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/primer-box/-/primer-box-2.4.0.tgz#e838ae36d1dd4ef23411bceb84ef50e522479306"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-breadcrumb@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-breadcrumb/-/primer-breadcrumb-1.3.0.tgz#6b3624932c1470b102921ccd1470f51684757d7f"
+  dependencies:
+    primer-marketing-support "1.3.0"
+    primer-support "4.3.0"
+
+primer-buttons@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/primer-buttons/-/primer-buttons-2.3.0.tgz#0616df82d0fb9e0410b53ae3fbd3ff467c464642"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-cards@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/primer-cards/-/primer-cards-0.4.0.tgz#38c52d640f1b75991aaed28d4898f0bfcf4438c8"
+  dependencies:
+    primer-marketing-support "1.3.0"
+    primer-support "4.3.0"
+
+primer-core@6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/primer-core/-/primer-core-6.3.0.tgz#9e42b85d0c99bd8293cdf3364f349546f6bb173e"
+  dependencies:
+    primer-base "1.4.0"
+    primer-box "2.4.0"
+    primer-buttons "2.3.0"
+    primer-forms "1.3.0"
+    primer-layout "1.3.0"
+    primer-navigation "1.3.0"
+    primer-support "4.3.0"
+    primer-table-object "1.3.0"
+    primer-tooltips "1.3.0"
+    primer-truncate "1.3.0"
+    primer-utilities "4.6.0"
+
+primer-css@^9.3.0:
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/primer-css/-/primer-css-9.3.0.tgz#04aac7cb3d678b6444fa7c2564f818b131a32246"
+  dependencies:
+    primer-alerts "1.4.0"
+    primer-avatars "1.3.0"
+    primer-base "1.4.0"
+    primer-blankslate "1.3.0"
+    primer-box "2.4.0"
+    primer-breadcrumb "1.3.0"
+    primer-buttons "2.3.0"
+    primer-cards "0.4.0"
+    primer-core "6.3.0"
+    primer-forms "1.3.0"
+    primer-labels "1.4.0"
+    primer-layout "1.3.0"
+    primer-markdown "3.6.0"
+    primer-marketing "5.3.0"
+    primer-marketing-support "1.3.0"
+    primer-marketing-type "1.3.0"
+    primer-marketing-utilities "1.3.0"
+    primer-navigation "1.3.0"
+    primer-page-headers "1.3.0"
+    primer-page-sections "1.3.0"
+    primer-product "5.3.0"
+    primer-support "4.3.0"
+    primer-table-object "1.3.0"
+    primer-tables "1.3.0"
+    primer-tooltips "1.3.0"
+    primer-truncate "1.3.0"
+    primer-utilities "4.6.0"
+
+primer-forms@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-forms/-/primer-forms-1.3.0.tgz#6c8230e1e720140642fbe6c1b7d559ec23975b70"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-labels@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/primer-labels/-/primer-labels-1.4.0.tgz#a9fd9bdd2f23dfe4f4c4918e67ebb3878eff98ca"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-layout@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-layout/-/primer-layout-1.3.0.tgz#679ab9eff0b3fdf77edb3123e3d83272fb302e76"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-markdown@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/primer-markdown/-/primer-markdown-3.6.0.tgz#30f3b50265672fbabc977d9b07348aec702ac160"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-marketing-support@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-marketing-support/-/primer-marketing-support-1.3.0.tgz#330575115d287da4daf9bc8a6af91c3f640c3b3f"
+
+primer-marketing-type@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-marketing-type/-/primer-marketing-type-1.3.0.tgz#3165810bf71700f2505185fb67ce316ad6b05d31"
+  dependencies:
+    primer-marketing-support "1.3.0"
+    primer-support "4.3.0"
+
+primer-marketing-utilities@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-marketing-utilities/-/primer-marketing-utilities-1.3.0.tgz#67773294f2bf672a9c22bfceb35fc093194a3efa"
+  dependencies:
+    primer-marketing-support "1.3.0"
+    primer-support "4.3.0"
+
+primer-marketing@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/primer-marketing/-/primer-marketing-5.3.0.tgz#6751d6017fabbc14b6c7c816e8907a65b4a47264"
+  dependencies:
+    primer-breadcrumb "1.3.0"
+    primer-cards "0.4.0"
+    primer-marketing-support "1.3.0"
+    primer-marketing-type "1.3.0"
+    primer-marketing-utilities "1.3.0"
+    primer-page-headers "1.3.0"
+    primer-page-sections "1.3.0"
+    primer-support "4.3.0"
+    primer-tables "1.3.0"
+
+primer-navigation@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-navigation/-/primer-navigation-1.3.0.tgz#4d61ac5ff0e5ebbe3984730febaf592e5e4aa54c"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-page-headers@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-page-headers/-/primer-page-headers-1.3.0.tgz#01bd262fc93035f808c8c1e63a7f3d5abaaf5ecf"
+  dependencies:
+    primer-marketing-support "1.3.0"
+    primer-support "4.3.0"
+
+primer-page-sections@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-page-sections/-/primer-page-sections-1.3.0.tgz#d30eba0e00b5c471bef29199b4a216e330b24adc"
+  dependencies:
+    primer-marketing-support "1.3.0"
+    primer-support "4.3.0"
+
+primer-product@5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/primer-product/-/primer-product-5.3.0.tgz#e61ca078b06d4bb9e17fb224e4f497d0cfd92d99"
+  dependencies:
+    primer-alerts "1.4.0"
+    primer-avatars "1.3.0"
+    primer-blankslate "1.3.0"
+    primer-labels "1.4.0"
+    primer-markdown "3.6.0"
+    primer-support "4.3.0"
+
+primer-support@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/primer-support/-/primer-support-4.3.0.tgz#c470fef8c0bff2ec8a771a0749783c2b388118fe"
+
+primer-table-object@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-table-object/-/primer-table-object-1.3.0.tgz#98e116ee8cca51f2c81d45267a754faf731e7cfb"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-tables@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-tables/-/primer-tables-1.3.0.tgz#57e86cd41a9ce3e303c5abcdbe4d2940d2a2554a"
+  dependencies:
+    primer-marketing-support "1.3.0"
+    primer-support "4.3.0"
+
+primer-tooltips@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-tooltips/-/primer-tooltips-1.3.0.tgz#ea3b4955c6b3d6de5a26d30379e7a58b93331ea3"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-truncate@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/primer-truncate/-/primer-truncate-1.3.0.tgz#44ebbfe5e4bf295093f69317bad562f538a51d86"
+  dependencies:
+    primer-support "4.3.0"
+
+primer-utilities@4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/primer-utilities/-/primer-utilities-4.6.0.tgz#93ca6d87e83ca5deab3c84013406dca4cc654deb"
+  dependencies:
+    primer-support "4.3.0"
+
 private@^0.1.6, private@^0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.7.tgz#68ce5e8a1ef0a23bb570cc28537b5332aba63ef1"
