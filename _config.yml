@@ -1,7 +1,8 @@
 title: Vue en español
 slogan: Slogan for website
 description: Description for website
-baseurl: ""
+baseurl: "/"
+slack: "https://slack.vue-es.org"
 url: "https://vue-es.org"
 markdown: "kramdown"
 exclude: [
@@ -24,5 +25,7 @@ assets:
   img: assets/img/
   js: assets/js/
 sass:
+  load_paths: 
+   - node_modules
   sass_dir: assets/_scss
   style: :compressed
