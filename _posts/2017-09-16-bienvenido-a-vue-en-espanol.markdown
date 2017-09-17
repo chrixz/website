@@ -8,19 +8,19 @@ categories: featured
 author: Javier Diaz
 github: coderdiaz
 ---
+
+<hr>
+
 # Header 1
-
 ## Header 2
-
 ### Header 3
-
 #### Header 4
-
 ##### Header 5
-
 ###### Header 6
 
+<hr>
 
+<br>
 
 ## Paragraphs
 
@@ -48,6 +48,7 @@ and an ordered list
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 **Code:** Let's keep it to its length and let it not take the whole width.
+
 {% highlight html %}
 
 <div class="nav">
@@ -58,7 +59,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     </ul>
 </div>
 
-
 {% endhighlight %}
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
@@ -66,12 +66,10 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 This is a simple markdown table
 
 | Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
+| ------------- |-------------| -----|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
-
-
 
 Use below code to show **Table of Contents** on a page
 
