@@ -4,9 +4,8 @@
     "description": "Website project for vue-es.org on Jekyll and Vue",
     "scripts": {
         "packit": "webpack --watch",
-        "buildit": "bundle exec jekyll build --watch --incremental",
-        "jekyllfy": "npm run packit & npm run buildit & npm run serve",
-        "serve": "browser-sync start --config browser-sync.js"
+        "buildit": "bundle exec jekyll serve --incremental",
+        "jekyllfy": "npm run packit & npm run buildit"
     },
     "author": "VUE-ES.ORG TEAM",
     "dependencies": {
