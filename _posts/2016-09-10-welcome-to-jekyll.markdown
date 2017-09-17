@@ -1,9 +1,9 @@
 ---
-layout: null
-title:  "Welcome to Jekyll!"
+layout: post
+title:  "Welcome to Jekyll! Blogging!! Blogging!!"
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
 date: 2016-09-10 10:50:00 +0530
-thumbnail: https://images.unsplash.com/photo-1484788984921-03950022c9ef
+thumbnail: https://i.ytimg.com/vi/DsuTwV0jwaY/maxresdefault.jpg
 categories: featured
 author: Jekyll
 github: jekyll
