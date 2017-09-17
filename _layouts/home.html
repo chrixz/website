@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title>Vue en español</title>
         <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{ 'main.css' | prepend: site.assets.css }}">
+        <link rel="stylesheet" type="text/css" href="{{ "main.css" | prepend: site.assets.css }}">
     </head>
     <body>
         <div id="app">
@@ -13,13 +13,16 @@
             {% include header.html %}
             <!-- end header -->
             <!-- content -->
-            <main>
+            <main class="main-content">
                 {{ content }}
             </main>
             <!-- end content -->
+            <!-- footer -->
+            {% include footer.html %}
+            <!-- end footer -->
         </div>
 
         <!-- Bundle.js -->
-        <script src="{{ 'bundle.js' | prepend: site.assets.js }}"></script>
+        <script src="{{ "bundle.js" | prepend: site.assets.js }}"></script>
     </body>
 </html>
