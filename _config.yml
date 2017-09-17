@@ -29,3 +29,6 @@ sass:
    - node_modules
   sass_dir: assets/_scss
   style: :compressed
+gems:
+  - jekyll-avatar
+  - jekyll-watch
