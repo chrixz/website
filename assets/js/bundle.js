@@ -63,11 +63,45 @@
 /******/ 	__webpack_require__.p = "/assets/js";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(5)(
+  /* script */
+  __webpack_require__(2),
+  /* template */
+  __webpack_require__(6),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/javierdiaz/Personal/website/node_modules/vue-disqus/VueDisqus.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] VueDisqus.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-d8e9061a", Component.options)
+  } else {
+    hotAPI.reload("data-v-d8e9061a", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10263,18 +10297,133 @@ Vue$3.compile = compileToFunctions;
 
 /* harmony default export */ __webpack_exports__["default"] = (Vue$3);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4), __webpack_require__(7)))
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _vue = __webpack_require__(0);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+
+exports.default = {
+  name: 'vue-disqus',
+  props: {
+    shortname: {
+      type: String,
+      required: true
+    },
+    identifier: {
+      type: String,
+      required: false
+    },
+    url: {
+      type: String,
+      required: false
+    },
+    title: {
+      type: String,
+      required: false
+    },
+    remote_auth_s3: {
+      type: String,
+      required: false
+    },
+    api_key: {
+      type: String,
+      required: false
+    },
+    sso_config: {
+      type: Object,
+      required: false
+    }
+  },
+  mounted: function mounted() {
+    if (window.DISQUS) {
+      this.reset(window.DISQUS);
+      return;
+    }
+    this.init();
+  },
+
+  methods: {
+    reset: function reset(dsq) {
+      var self = this;
+      dsq.reset({
+        reload: true,
+        config: function config() {
+          this.page.identifier = self.identifier || self.$route.path || window.location.pathname;
+          this.page.url = self.url || self.$el.baseURI;
+          if (self.title) {
+            this.page.title = self.title;
+          }
+          if (self.remote_auth_s3) {
+            this.page.remote_auth_s3 = self.remote_auth_s3;
+          }
+          if (self.key) {
+            this.page.api_key = self.key;
+          }
+          if (self.sso_config) {
+            this.sso = self.sso_config;
+          }
+        }
+      });
+    },
+    init: function init() {
+      var _this = this;
+
+      var self = this;
+      window.disqus_config = function () {
+        this.page.identifier = self.identifier || self.$route.path || window.location.pathname;
+        this.page.url = self.url || self.$el.baseURI;
+        if (self.title) {
+          this.page.title = self.title;
+        }
+        if (self.remote_auth_s3) {
+          this.page.remote_auth_s3 = self.remote_auth_s3;
+        }
+        if (self.api_key) {
+          this.page.api_key = self.api_key;
+        }
+        if (self.sso_config) {
+          this.sso = self.sso_config;
+        }
+      };
+      setTimeout(function () {
+        var d = document,
+            s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.setAttribute('id', 'embed-disqus');
+        s.setAttribute('data-timestamp', +new Date());
+        s.src = '//' + _this.shortname + '.disqus.com/embed.js';(d.head || d.body).appendChild(s);
+      }, 0);
+    }
+  }
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
+
+var _VueDisqus = __webpack_require__(0);
+
+var _VueDisqus2 = _interopRequireDefault(_VueDisqus);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10285,11 +10434,15 @@ new _vue2.default({
     return {
       message: 'Welcome to vue.js framework'
     };
+  },
+
+  components: {
+    Disqus: _VueDisqus2.default
   }
 });
 
 /***/ }),
-/* 2 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -10479,7 +10632,83 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 3 */
+/* 5 */
+/***/ (function(module, exports) {
+
+// this module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle
+
+module.exports = function normalizeComponent (
+  rawScriptExports,
+  compiledTemplate,
+  scopeId,
+  cssModules
+) {
+  var esModule
+  var scriptExports = rawScriptExports = rawScriptExports || {}
+
+  // ES6 modules interop
+  var type = typeof rawScriptExports.default
+  if (type === 'object' || type === 'function') {
+    esModule = rawScriptExports
+    scriptExports = rawScriptExports.default
+  }
+
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (compiledTemplate) {
+    options.render = compiledTemplate.render
+    options.staticRenderFns = compiledTemplate.staticRenderFns
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = scopeId
+  }
+
+  // inject cssModules
+  if (cssModules) {
+    var computed = Object.create(options.computed || null)
+    Object.keys(cssModules).forEach(function (key) {
+      var module = cssModules[key]
+      computed[key] = function () { return module }
+    })
+    options.computed = computed
+  }
+
+  return {
+    esModule: esModule,
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "disqus_thread"
+    }
+  })
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-d8e9061a", module.exports)
+  }
+}
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports) {
 
 var g;
