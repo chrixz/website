@@ -11,6 +11,7 @@ layout: null
 @import "variables";
 
 // Utilities
+@import "utilities/helpers";
 @import "utilities/navigation-header";
 
 // Global
@@ -20,3 +21,11 @@ layout: null
 // Header
 @import "header/skin";
 @import "header/skeleton";
+
+// Footer
+@import "footer/skin";
+@import "footer/skeleton";
+
+// Home
+@import "home/skin";
+@import "home/skeleton";
