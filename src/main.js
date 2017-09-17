@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import Disqus from 'vue-disqus/VueDisqus.vue'
 
 new Vue({
   el: '#app',
@@ -7,5 +8,8 @@ new Vue({
     return {
       message: 'Welcome to vue.js framework'
     }
+  },
+  components: {
+    Disqus
   }
 })
