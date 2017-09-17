@@ -4,7 +4,9 @@
     min-height: 400px;
      
     .ve-box-image {
-      height: 195px;
+      img {
+        height: 195px;
+      }
     }
   }
 }
