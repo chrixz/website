@@ -12,3 +12,23 @@ body {
 a {
   text-decoration: none;
 }
+
+// Blockquote
+blockquote {
+  color: $ve-dark-color;
+  border-left: 4px solid;
+  border-color: $ve-gray-dark-color;  
+}
+
+// Table
+table {
+  thead,
+  tbody {
+    tr {
+      th,
+      td {
+        text-align: left;
+      }
+    }
+  }
+}
