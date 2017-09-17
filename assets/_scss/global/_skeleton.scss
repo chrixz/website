@@ -3,3 +3,38 @@
 .main-content {
   min-height: 560px;
 }
+
+// Blockquote
+blockquote {
+  padding: 0 15px;
+}
+
+// Lists
+ul,
+ol {
+  padding-left: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+// Highlighter
+.highlight {
+  margin: 2em 40px;
+}
+
+// Table
+table {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  thead,
+  tbody {
+    tr {
+      th,
+      td {
+        padding: 10px;
+      }
+    }
+  }
+}

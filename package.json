@@ -10,7 +10,8 @@
     "author": "VUE-ES.ORG TEAM",
     "dependencies": {
         "primer-css": "^9.3.0",
-        "vue": "^2.4.4"
+        "vue": "^2.4.4",
+        "vue-disqus": "^2.0.3"
     },
     "devDependencies": {
         "babel-cli": "^6.23.0",

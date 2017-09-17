@@ -4,15 +4,15 @@ layout: home
 <section class="ve-articles">
     <div class="container">
         <div class="columns">
+            {% for post in site.posts %}
             <div class="one-third column">
-                {% for post in site.posts %}
                 <div class="ve-box box-shadow mb-5">
                     <div class="ve-box-image">
                         <img class="ve-img-responsive" src="{{ post.thumbnail }}" >
                     </div>
                     <div class="ve-box-content p-3">
                         <h3 class="ve-box-title pb-2">
-                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
                         </h3>
                         <div class="ve-box-body mb-5">
                             <p>{{ post.description }}</p>
@@ -20,7 +20,7 @@ layout: home
                         <div class="ve-box-author d-flex flex-justify-start">
                             <div class="ve-box-author-avatar pr-3">
                                 <a href="https://github.com/{{ post.github }}">
-                                    {% avatar {{ post.github }} %}
+                                    <img alt="{{ post.github }}" width="40" height="40" src="https://avatars3.githubusercontent.com/{{ post.github }}?v=3&s=80">
                                 </a>
                             </div>
                             <div>
@@ -30,8 +30,8 @@ layout: home
                         </div>
                     </div>
                 </div>
-                {% endfor %}
             </div>
+            {% endfor %}
         </div>
     </div>
 </section>
