@@ -4,7 +4,9 @@ description: Description for website
 baseurl: ""
 slack: "https://slack.vue-es.org"
 url: "https://vue-es.org"
-markdown: "kramdown"
+markdown: kramdown
+highlighter: rouge
+permalink: :title/
 exclude: [
   Gemfile,
   Gemfile.lock,
@@ -26,7 +28,7 @@ assets:
   js: assets/js/
 sass:
   load_paths: 
-   - node_modules
+    - node_modules
   sass_dir: assets/_scss
   style: :compressed
 gems:
