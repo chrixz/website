@@ -1,0 +1,11 @@
+// Navigation Header
+
+.ve-navigation-header {
+  .ve-navigation-header__item {
+    a {
+      text-decoration: none;
+      color: darken($ve-border-gray-color, 50%);
+      text-transform: uppercase;
+    }
+  }
+}
