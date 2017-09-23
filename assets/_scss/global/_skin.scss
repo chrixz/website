@@ -7,10 +7,25 @@
 
 body {
   background-color: $ve-background-gray-color;
+  font-family: $ve-secundary-font;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ve-primary-font;
+  font-weight: 500;
 }
 
 // Blockquote
