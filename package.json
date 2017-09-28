@@ -7,9 +7,8 @@
         "buildit": "bundle exec jekyll serve --incremental",
         "jekyllfy": "npm run packit & npm run buildit"
     },
-    "author": "VUE-ES.ORG TEAM",
+    "author": "vue-es.org team",
     "dependencies": {
-        "primer-css": "^9.3.0",
         "vue": "^2.4.4",
         "vue-disqus": "^2.0.3"
     },

@@ -34,3 +34,5 @@ sass:
 gems:
   - jekyll-avatar
   - jekyll-watch
+  - bootstrap
+  - jekyll-assets
