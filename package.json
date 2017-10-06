@@ -9,7 +9,6 @@
     },
     "author": "vue-es.org team",
     "dependencies": {
-        "bootstrap": "4.0.0-beta",
         "vue": "^2.4.4",
         "vue-disqus": "^2.0.3"
     },
