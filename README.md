@@ -16,10 +16,11 @@ Ir al archivo [CONTRIBUTING.md](https://github.com/vues-team/website/blob/master
 ## Contribuir en desarrollo
 
 - Clonar el repositorio.
-- Instalar las dependencias `bundler install`.
-- Instalar paquetes `npm install`.
-- Ejecutar `npm run jekyllfy`.
+- Instalar dependencias `npm install`.
+- Ejecutar en local `npm start`.
 - Acceder al proyecto web `http://localhost:4000`.
+- Compilar en servidor de desarrollo `npm run dev`.
+- Compilar en servidor de producción `npm run prod`.
 
 ## Referencias
 - Instalar Jekyll en local para desarrollo con [Github Pages](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/).
