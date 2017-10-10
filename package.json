@@ -3,10 +3,10 @@
     "version": "0.1.0",
     "description": "Website project for vue-es.org on Jekyll and Vue",
     "scripts": {
-        "start": "npm run dev",
+        "start": "concurrently \"npm run serve\" \"npm run dev\" --names \"SERVER,PACK\" --prefix name",
         "postinstall": "bundler install",
         "serve": "bundle exec jekyll serve --incremental",
-        "dev": "webpack --env.NODE_ENV=development --watch && npm run serve",
+        "dev": "webpack --env.NODE_ENV=development --watch",
         "prod": "webpack -p --env.NODE_ENV=production"
     },
     "author": "VUE-ES.ORG TEAM",
