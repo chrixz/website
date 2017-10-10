@@ -1,12 +1,11 @@
 ---
-layout: null
 # SCSS Entry Point
 ---
 
 @charset "utf-8";
 
-// Primer.css
-// @import "primer-css/index";
+// Added boostrap css
+@import "bootstrap";
 
 // Variables
 @import "variables";

@@ -9,9 +9,8 @@
         "dev": "webpack --env.NODE_ENV=development",
         "prod": "webpack -p --env.NODE_ENV=production"
     },
-    "author": "VUE-ES.ORG TEAM",
+    "author": "vue-es.org team",
     "dependencies": {
-        "primer-css": "^9.3.0",
         "vue": "^2.4.4",
         "vue-disqus": "^2.0.3"
     },
