@@ -3,9 +3,11 @@
     "version": "0.1.0",
     "description": "Website project for vue-es.org on Jekyll and Vue",
     "scripts": {
-        "packit": "webpack --watch",
-        "buildit": "bundle exec jekyll serve --incremental",
-        "jekyllfy": "npm run packit & npm run buildit"
+        "start": "concurrently \"npm run serve\" \"npm run dev -- --watch\" --names \"SERVER,PACK\" --prefix name",
+        "postinstall": "bundler install",
+        "serve": "bundle exec jekyll serve --incremental",
+        "dev": "webpack --env.NODE_ENV=development",
+        "prod": "webpack -p --env.NODE_ENV=production"
     },
     "author": "vue-es.org team",
     "dependencies": {
