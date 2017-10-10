@@ -25,8 +25,8 @@ module.exports = env => {
           loader: 'vue-loader',
           options: {
             loaders: {
-              'scss': 'vue-style-loader!css-loader!sass-loader',
-              'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
+              'scss': `vue-style-loader!css-loader${env.NODE_ENV === PRODUCTION ? '?-minimize' : ''}!sass-loader`,
+              'sass': `vue-style-loader!css-loader${env.NODE_ENV === PRODUCTION ? '?-minimize' : ''}!sass-loader?indentedSyntax`
             }
           }
         }
