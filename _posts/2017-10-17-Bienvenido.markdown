@@ -3,9 +3,9 @@ layout: post
 title:  "Primer Post. Bienvenido"
 description: "Este es el primer post y la bienvenida"
 date: 2017-09-16 23:59:59 +0530"
-thumbnail: http://via.placeholder.com/315x190
+thumbnail: https://vuejs.org/images/logo.png
 categories: bienvenido
-author: Comunidad de Vue-es
+author: @infogon
 github: jekyll
 ---
 
