@@ -5,8 +5,8 @@ description: "Este es el primer post y la bienvenida"
 date: 2017-09-16 23:59:59 +0530"
 thumbnail: https://vuejs.org/images/logo.png
 categories: bienvenido
-author: @infogon
-github: jekyll
+author: Gonzalo Nandez
+github: Gonzalo2310
 ---
 
 <hr>
