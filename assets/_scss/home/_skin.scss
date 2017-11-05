@@ -1,10 +1,16 @@
 // Home
 .ve-articles {
   .ve-card {
-    height: 350px;
-    overflow: hidden;
     .card-img-overlay {
       background: $ve-dark-overlay-color;
+      .card-title {
+        font-size: 46px;
+        font-weight: 600;
+        a {
+          color: $ve-white-color;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
