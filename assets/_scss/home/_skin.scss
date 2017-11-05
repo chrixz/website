@@ -1,6 +1,7 @@
 // Home
 .ve-articles {
   .ve-card {
+    background-size: cover;
     .card-img-overlay {
       background: $ve-dark-overlay-color;
       .card-title {
@@ -11,10 +12,21 @@
           text-decoration: none;
         }
       }
+      .ve-card-description {
+        font-size: 18px;
+      }
+      .media {
+        .media-body {
+          h5 {
+            font-weight: 700;
+          }
+        }
+      }
     }
   }
 }
 .ve-slack {
+  font-weight: 300;
   border-top: 1px solid #e5eff5;
   background: linear-gradient(180deg, hsla(0,0%,100%,.98), hsla(0,0%,100%,.9) 70%, hsla(0,0%,100%,.8)),url(../img/slack-bg.png) 50%/35%;
 }
