@@ -1,20 +1,14 @@
 // Home
-
 .ve-articles {
-  .ve-box {
-    background: $ve-background-white-color;
-
-    .ve-box-content {
-      .ve-box-title {
-        a {
-          text-decoration: none;
-          color: darken($ve-background-gray-color, 70%);
-        }
-      }
-      
-      .ve-box-body {
-        color: darken($ve-background-gray-color, 30%);
-      }
+  .ve-card {
+    height: 350px;
+    overflow: hidden;
+    .card-img-overlay {
+      background: $ve-dark-overlay-color;
     }
   }
+}
+.ve-slack {
+  border-top: 1px solid #e5eff5;
+  background: linear-gradient(180deg, hsla(0,0%,100%,.98), hsla(0,0%,100%,.9) 70%, hsla(0,0%,100%,.8)),url(../img/slack-bg.png) 50%/35%;
 }
