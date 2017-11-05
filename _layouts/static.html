@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div id="app">
+            <!-- header -->
+            {% include header.html %}
+            <!-- end header -->
+            <!-- content -->
+            <main class="main-content">
+                <div class="container">
+                    <div class="row mt-5 mb-5">
+                        <div class="col">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- end content -->
+            <!-- footer -->
+            {% include footer.html %}
+            <!-- end footer -->
+        </div>
+
+        <!-- Analytics -->
+        {% include analytics.html %}
+        <!-- Bundle.js -->
+        <script src="{{ "bundle.js" | prepend: site.assets.js }}"></script>
+    </body>
+</html>
