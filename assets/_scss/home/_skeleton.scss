@@ -1,11 +1,15 @@
 // Home
 .ve-articles {
   .ve-card {
-    height: 350px;
+    min-height: 350px;
     overflow: hidden;
     .card-img-overlay {
       padding: 25px 35px;
       padding-right: 20%;
+      .ve-card-description {
+        height: 55px;
+        overflow: hidden;
+      }
     }
   }
   .ve-box {
