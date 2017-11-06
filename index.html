@@ -1,37 +1,56 @@
 ---
 layout: home
 ---
-<section class="ve-articles">
-    <div class="container">
-        <div class="columns">
-            {% for post in site.posts %}
-            <div class="one-third column">
-                <div class="ve-box box-shadow mb-5">
-                    <div class="ve-box-image">
-                        <img class="ve-img-responsive" src="{{ post.thumbnail }}" >
-                    </div>
-                    <div class="ve-box-content p-3">
-                        <h3 class="ve-box-title pb-2">
-                            <a href="{{ post.url }}">{{ post.title }}</a>
-                        </h3>
-                        <div class="ve-box-body mb-5">
-                            <p>{{ post.description }}</p>
-                        </div>
-                        <div class="ve-box-author d-flex flex-justify-start">
-                            <div class="ve-box-author-avatar pr-3">
-                                <a href="https://github.com/{{ post.github }}">
-                                    <img alt="{{ post.github }}" width="40" height="40" src="https://avatars3.githubusercontent.com/{{ post.github }}?v=3&s=80">
-                                </a>
-                            </div>
-                            <div>
-                                <strong>{{ post.author }}</strong> <br>
-                                <small>{{ post.date | date_to_string }}</small>
+<div id="app">
+    <section class="ve-articles">
+        <div class="container">
+            <div class="row pt-5">
+                {% for post in site.posts limit: 5 %}
+                    {% if forloop.first == true %}
+                    <div class="col-lg-12 col-sm-12 col-xs-12 mb-4">
+                        <div class="ve-card card bg-dark text-white" style="background-image: url({{ post.thumbnail }})">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                                <p class="card-text ve-card-description">{{ post.description }}</p>
+                                <div class="media">
+                                    <a href="https://github.com/{{ post.github }}"><img class="mr-3 rounded-circle" src="https://avatars3.githubusercontent.com/{{ post.github }}?s=460" width="50" alt="Generic placeholder image"></a>
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-0">{{ post.author }}</h5>
+                                        {{ post.date | date_to_string }}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    {% else %}
+                    <div class="col-lg-6 col-sm-12 col-xs-12 mb-4">
+                        <div class="ve-card card bg-dark text-white" style="background-image: url({{post.thumbnail}})">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                                <p class="card-text ve-card-description">{{ post.description }}</p>
+                                <div class="media">
+                                    <a href="https://github.com/{{ post.github }}"><img class="mr-3 rounded-circle" src="https://avatars3.githubusercontent.com/{{ post.github }}?s=460" width="50" alt="Generic placeholder image"></a>
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-0">{{ post.author }}</h5>
+                                        {{ post.date | date_to_string }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
             </div>
-            {% endfor %}
+        </div>
+    </section>
+</div>
+<section class="ve-slack mt-3">
+    <div class="container">
+        <div class="col-lg-6 col-sm-12 col-xs-12">
+            <img src="{{ 'slack-logotype.png' | prepend: site.assets.img }}" width="120">
+            <p class="pt-3">Únete a nuestra comunidad y comunicate con otros desarrolladores de Vue alrededor del mundo en tiempo real.</p>
+            <p class="pt-2">Si. Realmente solo tratamos de hacer que la mensajería instantánea suene como algo asombroso e increíble.</p>
+            <script async defer src="https://slack.vue-es.org/slackin.js"></script>
         </div>
     </div>
 </section>

@@ -3,13 +3,14 @@
     "version": "0.1.0",
     "description": "Website project for vue-es.org on Jekyll and Vue",
     "scripts": {
-        "packit": "webpack --watch",
-        "buildit": "bundle exec jekyll serve --incremental",
-        "jekyllfy": "npm run packit & npm run buildit"
+        "start": "concurrently \"npm run serve\" \"npm run dev -- --watch\" --names \"SERVER,PACK\" --prefix name",
+        "postinstall": "bundler install",
+        "serve": "bundle exec jekyll serve --incremental",
+        "dev": "webpack --env.NODE_ENV=development",
+        "prod": "webpack -p --env.NODE_ENV=production"
     },
-    "author": "VUE-ES.ORG TEAM",
+    "author": "vue-es.org team",
     "dependencies": {
-        "primer-css": "^9.3.0",
         "vue": "^2.4.4",
         "vue-disqus": "^2.0.3"
     },

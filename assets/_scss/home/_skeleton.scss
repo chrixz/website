@@ -1,12 +1,27 @@
 // Home
 .ve-articles {
+  .ve-card {
+    min-height: 350px;
+    overflow: hidden;
+    .card-img-overlay {
+      padding: 25px 35px;
+      padding-right: 20%;
+      .ve-card-description {
+        height: 55px;
+        overflow: hidden;
+      }
+    }
+  }
   .ve-box {
     min-height: 400px;
-     
     .ve-box-image {
       img {
         height: 195px;
       }
     }
   }
+}
+.ve-slack {
+  padding: 75px 0;
+  min-height: 35px;
 }

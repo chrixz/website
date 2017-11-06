@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: $ve-background-gray-color;
-  font-family: $ve-secundary-font;
+  background-color: $ve-white-color;
+  font-family: $ve-primary-font;
 }
 
 a {
@@ -46,4 +46,8 @@ table {
       }
     }
   }
+}
+
+.main-content {
+  background: #f8fafc;
 }

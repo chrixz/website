@@ -1,12 +1,11 @@
 ---
-layout: null
 # SCSS Entry Point
 ---
 
 @charset "utf-8";
 
-// Primer.css
-// @import "primer-css/index";
+// Bootstrap 4 beta
+@import "bootstrap";
 
 // Variables
 @import "variables";
@@ -31,3 +30,6 @@ layout: null
 // Home
 @import "home/skin";
 @import "home/skeleton";
+
+// Post
+@import "post/skin";

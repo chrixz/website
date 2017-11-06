@@ -1,0 +1,36 @@
+// Post style
+
+.ve-article {
+  .ve-author-link {
+    text-decoration: none;
+    color: $ve-vue-green-color;
+    &:hover {
+      color: lighten($ve-vue-green-color, 10%);
+    }
+  }
+  .ve-page-title {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .ve-page-thumbnail {
+    img {
+      width: 100%;
+      margin: 25px 0;
+    }
+  }
+  .ve-page-body {
+    font-size: 21px;
+    font-family: $ve-post-font;
+    p {
+      font-size: 21px;
+    }
+    img {
+      width: 100%;
+      margin: 25px 0;
+    }
+    iframe {
+      margin: 25px 0;
+      width: 100%;
+    }
+  }
+}
