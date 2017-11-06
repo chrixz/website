@@ -4,4 +4,21 @@
   background: $ve-white-color;
   border-bottom: 1px solid;
   border-color: $ve-border-gray-color;
+  .navbar-brand {
+    font-weight: 500;
+    color: $ve-black-color;
+  }
+  .ve-nav {
+    a {
+      color: $ve-dark-color;
+      font-weight: 500;
+      transition: ease all .1s;
+      &:hover {
+        color: $ve-vue-green-color;
+      }
+      &.active {
+        color: $ve-vue-green-color;
+      }
+    }
+  }
 }

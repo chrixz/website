@@ -1,5 +1,31 @@
 // Header
 
 .ve-header {
-  height: 105px;
+  height: 72px;
+}
+
+@media (max-width: 768px) {
+  .ve-header {
+    .navbar-nav {
+      flex-direction: row;
+      .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .ve-header {
+    height: 115px;
+    .navbar {
+      justify-content: center;
+    }
+    .navbar-nav {
+      &.ml-auto {
+        margin: 0 auto;
+      }
+    }
+  }
 }
