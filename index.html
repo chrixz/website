@@ -4,7 +4,7 @@ layout: home
 <div id="app">
     <section class="ve-articles">
         <div class="container">
-            <div class="row mt-5">
+            <div class="row pt-5">
                 {% for post in site.posts limit: 5 %}
                     {% if forloop.first == true %}
                     <div class="col-lg-12 col-sm-12 col-xs-12 mb-4">
@@ -44,7 +44,7 @@ layout: home
         </div>
     </section>
 </div>
-<section class="ve-slack">
+<section class="ve-slack mt-3">
     <div class="container">
         <div class="col-lg-6 col-sm-12 col-xs-12">
             <img src="{{ 'slack-logotype.png' | prepend: site.assets.img }}" width="120">
