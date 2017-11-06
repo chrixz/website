@@ -8,7 +8,7 @@ layout: home
                 {% for post in site.posts limit: 5 %}
                     {% if forloop.first == true %}
                     <div class="col-lg-12 col-sm-12 col-xs-12 mb-4">
-                        <div class="ve-card card bg-dark text-white" style="background-image: url({{ 'background.png' | prepend: site.assets.img }})">
+                        <div class="ve-card card bg-dark text-white" style="background-image: url({{ post.thumbnail }})">
                             <div class="card-img-overlay">
                                 <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                                 <p class="card-text ve-card-description">{{ post.description }}</p>
@@ -24,7 +24,7 @@ layout: home
                     </div>
                     {% else %}
                     <div class="col-lg-6 col-sm-12 col-xs-12 mb-4">
-                        <div class="ve-card card bg-dark text-white" style="background-image: url({{ 'background.png' | prepend: site.assets.img }})">
+                        <div class="ve-card card bg-dark text-white" style="background-image: url({{post.thumbnail}})">
                             <div class="card-img-overlay">
                                 <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
                                 <p class="card-text ve-card-description">{{ post.description }}</p>
@@ -47,7 +47,7 @@ layout: home
 <section class="ve-slack">
     <div class="container">
         <div class="col-lg-6 col-sm-12 col-xs-12">
-            <img src="{{ "slack-logotype.png" | prepend: site.assets.img }}" width="120">
+            <img src="{{ 'slack-logotype.png' | prepend: site.assets.img }}" width="120">
             <p class="pt-3">Únete a nuestra comunidad y comunicate con otros desarrolladores de Vue alrededor del mundo en tiempo real.</p>
             <p class="pt-2">Si. Realmente solo tratamos de hacer que la mensajería instantánea suene como algo asombroso e increíble.</p>
             <script async defer src="https://slack.vue-es.org/slackin.js"></script>
