@@ -5,7 +5,7 @@ layout: default
     <div class="row">
         <div class="col-sm-12 col-md-10 col-lg-8 ml-auto mr-auto">
             <article class="ve-article pt-5 pb-5">
-                <div class="media">
+                <div class="media pb-5">
                     <a href="https://github.com/{{ page.github }}">
                         <img class="mr-3 rounded-circle" src="https://avatars3.githubusercontent.com/{{ page.github }}?v=3" width="50" alt="{{ page.github }}">
                     </a>
@@ -14,10 +14,10 @@ layout: default
                         {{ page.date | date_to_string }}
                     </div>
                 </div>
+                <h1 class="ve-page-title">{{ page.title }}</h1>
                 <div class="ve-page-thumbnail">
                     <img src="{{ page.thumbnail }}">
                 </div>
-                <h1 class="ve-page-title mb-3">{{ page.title }}</h1>
                 <div class="ve-page-body mt-2 mb-5">
                     {{ content }}
                 </div>
