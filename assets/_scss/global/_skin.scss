@@ -48,6 +48,18 @@ table {
   }
 }
 
+// Card
+.card {
+  .card-title {
+    a {
+      color: $ve-dark-color;
+      &:hover {
+        color: lighten($ve-dark-color, 10%);
+      }
+    }
+  }
+}
+
 .main-content {
   background: #f8fafc;
 }
