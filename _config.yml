@@ -39,3 +39,4 @@ gems:
   - bootstrap
   - jekyll-assets
   - jekyll-paginate
+  - jekyll-seo-tag

@@ -7,4 +7,5 @@ group :jekyll_plugins do
     gem 'jekyll-watch'
     gem 'jekyll-avatar'
     gem 'jekyll-paginate'
+    gem 'jekyll-seo-tag'
 end
