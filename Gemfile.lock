@@ -228,10 +228,8 @@ DEPENDENCIES
   github-pages
   jekyll-assets
   jekyll-avatar
+  jekyll-paginate
   jekyll-watch
 
-RUBY VERSION
-   ruby 2.1.0p0
-
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.3
