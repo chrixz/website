@@ -10,7 +10,9 @@ author: Javier Diaz
 github: coderdiaz
 ---
 
-La versión **v0.17.0** de Vuetify fue lanzada aproximadamente hace 21 horas y posee muchos cambios bastante interesantes, desde nuevas características hasta mejoras en los componentes. También se anunció que en el siguiente mes, será publicada la versión **v1.0** por motivo del primer aniversario del lanzamiento de la librería.
+La versión **v0.17.0** de Vuetify fue lanzada aproximadamente hace 21 horas y posee muchos cambios bastante interesantes, desde nuevas características hasta mejoras en los componentes. 
+
+También se anunció que en el siguiente mes, será publicada la versión **v1.0** por motivo del primer aniversario del lanzamiento de la librería.
 
 Actualmente este paquete posee más de 6,000 estrellas en la plataforma de GitHub y más de 3000 peticiones cerradas. Sin más, vamos a conocer las nuevas mejoras que incluye esta maravillosa librería: 
 

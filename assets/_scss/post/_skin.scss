@@ -1,16 +1,23 @@
 // Post style
 
 .ve-article {
-  .ve-author-link {
+  .ve-author-link,
+  a {
     text-decoration: none;
-    color: $ve-vue-green-color;
+    color: darken($ve-vue-green-color, 5%);
     &:hover {
-      color: lighten($ve-vue-green-color, 10%);
+      color: darken($ve-vue-green-color, 15%);
+    }
+  }
+  ul {
+    li {
+      padding-bottom: 10px;
     }
   }
   .ve-page-title {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: $ve-post-font;
   }
   .ve-page-thumbnail {
     img {
@@ -19,10 +26,11 @@
     }
   }
   .ve-page-body {
-    font-size: 21px;
+    font-size: 1.25rem;
+    line-height: 1.5em;
     font-family: $ve-post-font;
     p {
-      font-size: 21px;
+      font-size: 1.25rem;
     }
     img {
       width: 100%;
@@ -31,6 +39,20 @@
     iframe {
       margin: 25px 0;
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .ve-article {
+    .ve-page-title {
+      font-size: 2rem;
+    }
+    .ve-page-body {
+      font-size: 1.125rem;
+      p {
+        font-size: 1.125rem;
+      }
     }
   }
 }
