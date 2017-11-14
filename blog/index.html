@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<section class="ve-blog pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="card-columns">
+                {% for post in paginator.posts %}
+                <div class="card">
+                    <img class="card-img-top" src="{{post.thumbnail}}">
+                    <div class="card-body">
+                        <h4 class="card-title"><a class="card-link" href="{{post.url}}">{{post.title}}</a></h4>
+                        <p class="card-text">{{post.excerpt}}</p>
+                        <div class="media">
+                            <a href="https://github.com/{{post.github}}">
+                                <img src="https://avatars3.githubusercontent.com/{{post.github}}?s=460" width="50" alt="Generic placeholder image" class="mr-3 rounded-circle">
+                            </a> 
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-0">{{post.author}}</h5>
+                                {{post.date | date_to_string}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="btn-toolbar justify-content-center">
+                    <div class="btn-group mr-2">
+                        {% if paginator.previous_page %}
+                        <a href="{{ paginator.previous_page_path }}" class="btn btn-primary previous">Anterior</a>
+                        {% else %}
+                        <button class="btn btn-secundary previous" disabled>Anterior</button>
+                        {% endif %}
+                    </div>
+                    <div class="btn-group mr-2">
+                        <span class="btn page_number">Página: {{ paginator.page }} de {{ paginator.total_pages }}</span>
+                    </div>
+                    <div class="btn-group">
+                        {% if paginator.next_page %}
+                        <a href="{{ paginator.next_page_path }}" class="btn btn-primary next">Siguiente</a>
+                        {% else %}
+                        <button class="btn btn-secundary next" disabled>Siguiente</button>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

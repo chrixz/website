@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby RUBY_VERSION
 gem 'github-pages', group: :jekyll_plugins
 
 group :jekyll_plugins do
@@ -7,4 +6,5 @@ group :jekyll_plugins do
     gem 'jekyll-assets'
     gem 'jekyll-watch'
     gem 'jekyll-avatar'
+    gem 'jekyll-paginate'
 end
