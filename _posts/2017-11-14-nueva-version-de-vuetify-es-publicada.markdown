@@ -10,15 +10,15 @@ author: Javier Diaz
 github: coderdiaz
 ---
 
-La versión **v0.17.0** de Vuetify fue lanzada aproximadamente hace 21 horas y posee muchos cambios bastante interesantes, desde nuevas características hasta mejoras en los componentes. También se anunció que el siguiente será publicada la versión **v1.0** por motivo del primer aniversario del lanzamiento de la librería.
+La versión **v0.17.0** de Vuetify fue lanzada aproximadamente hace 21 horas y posee muchos cambios bastante interesantes, desde nuevas características hasta mejoras en los componentes. También se anunció que en el siguiente mes, será publicada la versión **v1.0** por motivo del primer aniversario del lanzamiento de la librería.
 
-Actualmente este paquete posee más de 6,000 estrellas en la plataforma de GitHub y más de 3000 peticiones cerradas. Sin más vamos a conocer las nuevas mejoras que incluye esta maravillosa librería: 
+Actualmente este paquete posee más de 6,000 estrellas en la plataforma de GitHub y más de 3000 peticiones cerradas. Sin más, vamos a conocer las nuevas mejoras que incluye esta maravillosa librería: 
 
 ## Cambios importantes
-* Se agregado nuevos temas dinámicos listos para utilizar con SSR.
-* Se ha reescrito completamente los componentes `v-date-picker`, `v-select` y `v-navigation-drawer` esto con la finalidad de brindar una mejor estabilidad y performance a los mismos.
+* Se han agregado nuevos temas dinámicos listos para utilizar con SSR.
+* Se ha reescrito completamente los componentes `v-date-picker`, `v-select` y `v-navigation-drawer` esto con la finalidad de brindar una mejor estabilidad y rendimiento.
 
-De igual manera, como en toda librería que va mejorando constantemente las cosas cambian, pero no te alarmes, para ello el equipo de Vuetify ha coloca dentro de los cambios una guía de actualización para que te apoyes en caso de que actualices tu proyecto a la nueva versión y te des cuenta que algunas cosas están rotas.
+De igual manera como en toda librería que va mejorando constantemente, las cosas cambian, pero no te alarmes, para ello el equipo de Vuetify ha colocado dentro de los cambios una guía de actualización para que te apoyes en caso de que actualices tu proyecto a la nueva versión y te des cuenta que algunas cosas están rotas.
 
 Como punto importante hay que destacar que esta nueva versión funciona con una versión igual o superior a la **v2.5.0 de Vue**.
 
