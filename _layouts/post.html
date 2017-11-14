@@ -6,20 +6,20 @@ layout: default
         <div class="col-sm-12 col-md-10 col-lg-8 ml-auto mr-auto">
             <article class="ve-article pt-5 pb-5">
                 <div class="media pb-5">
-                    <a href="https://github.com/{{ page.github }}">
-                        <img class="mr-3 rounded-circle" src="https://avatars3.githubusercontent.com/{{ page.github }}?v=3" width="50" alt="{{ page.github }}">
+                    <a href="https://github.com/{{page.github}}">
+                        <img class="mr-3 rounded-circle" src="https://avatars3.githubusercontent.com/{{page.github}}?v=3" width="50" alt="{{page.github}}">
                     </a>
                     <div class="media-body">
-                        <h5 class="mt-0">Publicado por <a class="ve-author-link" href="https://github.com/{{ page.github }}">{{ page.author }}</a></h5>
-                        {{ page.date | date_to_string }}
+                        <h5 class="mt-0">Publicado por <a class="ve-author-link" href="https://github.com/{{page.github}}">{{page.author}}</a></h5>
+                        {{page.date | date_to_string}}
                     </div>
                 </div>
-                <h1 class="ve-page-title">{{ page.title }}</h1>
+                <h1 class="ve-page-title">{{page.title}}</h1>
                 <div class="ve-page-thumbnail">
-                    <img src="{{ page.thumbnail }}">
+                    <img class="rounded" src="{{page.thumbnail}}">
                 </div>
                 <div class="ve-page-body mt-2 mb-5">
-                    {{ content }}
+                    {{content}}
                 </div>
                 <disqus shortname="vue-es"></disqus>
             </article>

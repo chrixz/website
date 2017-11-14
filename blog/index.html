@@ -6,7 +6,7 @@ layout: default
         <div class="row">
             <div class="card-columns">
                 {% for post in paginator.posts %}
-                <div class="card">
+                <div class="card mb-4">
                     <img class="card-img-top" src="{{post.thumbnail}}">
                     <div class="card-body">
                         <h4 class="card-title"><a class="card-link" href="{{post.url}}">{{post.title}}</a></h4>
@@ -25,14 +25,15 @@ layout: default
                 {% endfor %}
             </div>
         </div>
-        <div class="row mt-5">
+        {% if paginator.total_pages > 1 %}
+        <div class="row">
             <div class="col-md-12">
                 <div class="btn-toolbar justify-content-center">
                     <div class="btn-group mr-2">
                         {% if paginator.previous_page %}
-                        <a href="{{ paginator.previous_page_path }}" class="btn btn-primary previous">Anterior</a>
+                        <a href="{{ paginator.previous_page_path }}" class="btn btn-primary previous"><i class="fa fa-chevron-left"></i></a>
                         {% else %}
-                        <button class="btn btn-secundary previous" disabled>Anterior</button>
+                        <button class="btn btn-secundary previous" disabled><i class="fa fa-chevron-left"></i></button>
                         {% endif %}
                     </div>
                     <div class="btn-group mr-2">
@@ -40,13 +41,14 @@ layout: default
                     </div>
                     <div class="btn-group">
                         {% if paginator.next_page %}
-                        <a href="{{ paginator.next_page_path }}" class="btn btn-primary next">Siguiente</a>
+                        <a href="{{ paginator.next_page_path }}" class="btn btn-primary next"><i class="fa fa-chevron-right"></i></a>
                         {% else %}
-                        <button class="btn btn-secundary next" disabled>Siguiente</button>
+                        <button class="btn btn-secundary next" disabled><i class="fa fa-chevron-right"></i></button>
                         {% endif %}
                     </div>
                 </div>
             </div>
         </div>
+        {% endif %}
     </div>
 </section>
