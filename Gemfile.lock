@@ -229,6 +229,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-avatar
   jekyll-paginate
+  jekyll-seo-tag
   jekyll-watch
 
 BUNDLED WITH
