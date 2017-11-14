@@ -25,3 +25,25 @@
   padding: 75px 0;
   min-height: 35px;
 }
+
+@media (max-width: 468px) {
+  .ve-articles {
+    .row {
+      padding: 0 !important;
+      .col-lg-12,
+      .col-lg-6 {
+        margin: 0 !important;
+        padding: 0;
+      }
+      .ve-card {
+        min-height: 400px;
+      }
+    }
+  }
+  .ve-slack {
+    margin: 0 !important;
+    .__slackin {
+      width: 102px;
+    }
+  }
+}

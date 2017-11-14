@@ -33,6 +33,17 @@
 }
 
 @media (max-width: 468px) {
+  .ve-articles {
+    .row {
+      .ve-card {
+        border: 0;
+        border-radius: 0;
+        .card-title {
+          font-size: 32px;
+        }
+      }
+    }
+  }
   .ve-slack {
     text-align: center;
   }
