@@ -36,7 +36,11 @@
         padding: 0;
       }
       .ve-card {
-        min-height: 400px;
+        min-height: 450px;
+        .card-img-overlay {
+          padding-right: 0;
+          padding: 25px;
+        }
       }
     }
   }
