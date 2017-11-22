@@ -33,7 +33,7 @@ h6 {
 blockquote {
   color: $ve-dark-color;
   border-left: 4px solid;
-  border-color: $ve-gray-dark-color;  
+  border-color: $ve-gray-dark-color;
 }
 
 // Table
@@ -44,6 +44,25 @@ table {
       th,
       td {
         text-align: left;
+      }
+    }
+  }
+
+  thead {
+    tr {
+      th {
+        color: #fff;
+        background-color: #212529;
+        border-color: #32383e;
+        padding: .75rem !important;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        border: 1px solid #e9ecef;
+        padding: .75rem !important;
       }
     }
   }
@@ -58,6 +77,20 @@ table {
         color: lighten($ve-dark-color, 10%);
       }
     }
+  }
+}
+
+// Highlight
+.highlight {
+  padding: 20px;
+  margin: 20px 0 !important;
+}
+
+// Static
+.ve-static {
+  font-family: "Miriam Libre","Arial",sans-serif;
+  p {
+    font-size: 1.125rem;
   }
 }
 

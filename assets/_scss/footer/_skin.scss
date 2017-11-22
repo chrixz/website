@@ -1,7 +1,15 @@
 // Footer
 .ve-footer {
-  background: $ve-background-white-color;
+  background: $ve-navbar-dark-color;
   border-top: 1px solid;
   border-color: $ve-border-gray-color;
   padding: 25px 0;
+  color: $ve-white-color;
+
+  a {
+    color: $ve-white-color;
+    &:hover {
+      color: darken($ve-white-color, 10%);
+    }
+  }
 }
