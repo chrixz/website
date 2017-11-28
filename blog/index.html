@@ -7,14 +7,16 @@ layout: home
             <div class="card-columns">
                 {% for post in paginator.posts %}
                 <div class="card mb-4">
+                    {%if post.thumbnail %}
                     <img class="card-img-top" src="{{post.thumbnail}}">
+                    {% endif %}
                     <div class="card-body">
                         <h4 class="card-title"><a class="card-link" href="{{post.url}}">{{post.title}}</a></h4>
                         <p class="card-text">{{post.excerpt}}</p>
                         <div class="media">
                             <a href="https://github.com/{{post.github}}">
                                 <img src="https://avatars3.githubusercontent.com/{{post.github}}?s=460" width="50" alt="Generic placeholder image" class="mr-3 rounded-circle">
-                            </a> 
+                            </a>
                             <div class="media-body">
                                 <h5 class="mt-0 mb-0">{{post.author}}</h5>
                                 {{post.date | date_to_string}}
