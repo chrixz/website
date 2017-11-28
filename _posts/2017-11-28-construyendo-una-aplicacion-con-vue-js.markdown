@@ -8,7 +8,7 @@ categories: workshops
 author: Javier Diaz
 github: coderdiaz
 ---
-En este taller aprenderás a como realizar una aplicación SPA desde cero utilizando Vue, VueRouter y Axios. Este será llevado a cabo el día **30 de Noviembre a las 20:00 hrs (Ciudad de México)**.
+En este taller aprenderás a como realizar una aplicación SPA desde cero utilizando Vue, VueRouter y Axios. Este será llevado a cabo el día **29 de Noviembre a las 20:00 hrs (Ciudad de México)**.
 
 <iframe width="1280" height="420" src="https://www.youtube.com/embed/Ttwd04svgWk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
