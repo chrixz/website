@@ -10,7 +10,11 @@ github: coderdiaz
 ---
 En este taller aprenderás a como realizar una aplicación SPA desde cero utilizando Vue, VueRouter y Axios. Este será llevado a cabo el día **29 de Noviembre a las 20:00 hrs (Ciudad de México)**.
 
-<iframe width="1280" height="420" src="https://www.youtube.com/embed/Ttwd04svgWk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="1280" height="520" src="https://www.youtube.com/embed/15J-aHK-TBY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+<p class="text-center">
+  <a class="btn btn-primary" style="color: white;" href="https://www.youtube.com/embed/Ttwd04svgWk">Primer video del taller con fallo en transmisión</a>
+</p>
 
 Podrás conocer ventajas de utilizar este grandioso framework, como trabajar de forma progresiva con tu aplicación, diferentes arquitectura, tanto como para diseñadores web, frontends y desarrolladores en React que están interesados en aprender Vue.
 
